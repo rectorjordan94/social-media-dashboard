@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#hero-container {
+  display: flex;
+  justify-content: center;
+}
+
+#hero-container-grid {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.followers-display {
+  width: 20%;
+}
+
+.username {
+  font-weight: 700;
+  color: #696d7a;
+  font-size: .75rem;
+}
