@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,19 +12,15 @@ code {
     monospace;
 }
 
-#hero-container {
-  display: flex;
-  justify-content: center;
-}
-
-#hero-container-grid {
-  width: 80%;
+/* #hero-container {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .followers-display {
   width: 20%;
+  background-color: #f0f3fa;
+  text-align: center;
 }
 
 .username {
@@ -32,3 +28,15 @@ code {
   color: #696d7a;
   font-size: .75rem;
 }
+
+.followers-text {
+  letter-spacing: .2rem;
+  font-size: 12px;
+  color: rgb(99, 104, 126, .7);
+}
+
+.followers-change {
+  font-size: 11px;
+  font-weight: 700;
+}
+

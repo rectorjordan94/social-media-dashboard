@@ -1,4 +1,5 @@
 import FollowerContainer from "./FollowerContainer"
+import Container from 'react-bootstrap/Container'
 
 const HeroContainer = () => {
 
@@ -11,11 +12,9 @@ const HeroContainer = () => {
 
 
     return (
-        <div id='hero-container'>
-            <div id='hero-container-grid'>
-                <FollowerContainer followerInfo={followerInfo} />
-            </div>
-        </div>
+        <Container id='hero-container' className='d-flex justify-content-between'>
+            <FollowerContainer followerInfo={followerInfo} />
+        </Container>
     )
 }
 
