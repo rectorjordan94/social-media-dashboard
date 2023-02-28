@@ -1,12 +1,41 @@
 import Container from 'react-bootstrap/Container'
 
+
+
 const FollowerContainer = (props) => {
 
     const followersDisplay = props.followerInfo.map((item, index) => {
-        return <Container className='followers-display mx-3'>
+        return <Container key={index} className='followers-display mx-3'>
             <div>
-                <img src="" alt="" />
-                <p>{item.platform}</p>
+                {
+                    item.platform === "instagram"
+                    ?
+                    <img src="images/icon-instagram.svg" className="icon" alt="" />
+                    :
+                    null
+                }
+                {
+                    item.platform === "facebook"
+                    ?
+                    <img src="/images/icon-facebook.svg" className="icon" alt="" />
+                    :
+                    null
+                }
+                {
+                    item.platform === "twitter"
+                    ?
+                    <img src="images/icon-twitter.svg" className="icon" alt="" />
+                    :
+                    null
+                }
+                {
+                    item.platform === "youtube"
+                    ?
+                    <img src="images/icon-youtube.svg" className="icon" alt="" />
+                    :
+                    null
+                }
+
                 <span className='username' >{item.username}</span>
             </div>
             <div>
@@ -14,7 +43,24 @@ const FollowerContainer = (props) => {
                 <p className='followers-text'>FOLLOWERS</p>
             </div>
             <div>
-                <p className='followers-change'>{item.change} Today</p>
+                {   item.change >= 0
+                    ?
+                    <div>
+                        <img src="/images/icon-up.svg" alt="" />
+                        <span className='up-change'> {item.change} Today</span>
+                    </div>
+                    :
+                    null
+                }
+                {   item.change <= 0
+                    ?
+                    <div>
+                        <img src="/images/icon-down.svg" alt="" />
+                        <span className='down-change'> {item.change} Today</span>
+                    </div>
+                    :
+                    null
+                }
             </div>
         </Container>
     })
