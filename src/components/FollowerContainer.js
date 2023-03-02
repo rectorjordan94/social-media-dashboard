@@ -5,8 +5,8 @@ import Container from 'react-bootstrap/Container'
 const FollowerContainer = (props) => {
 
     const followersDisplay = props.followerInfo.map((item, index) => {
-        return <Container key={index} className='followers-display mx-3'>
-            <div>
+        return <Container key={index} className='followers-display'>
+            <div className='follower-icon-user'>
                 {
                     item.platform === "instagram"
                     ?

@@ -12,7 +12,7 @@ const HeroContainer = () => {
 
 
     return (
-        <Container id='hero-container' className='d-flex justify-content-between'>
+        <Container id='hero-container'>
             <FollowerContainer followerInfo={followerInfo} />
         </Container>
     )
